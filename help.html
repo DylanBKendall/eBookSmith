@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>eBooksmith</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+  <main>
+
+    <div class="help-intro flex-column">
+      <h1 class="center-content">How Can We Help?</h1>
+      <div class="help-navigation d-flex flex-column flex-md-row gap-3 align-items-center">
+        <a href="#video-tutorial" class="btn btn-primary fs-1">Video Tutorial</a>
+        <a href="#FAQ" class="btn btn-primary fs-1">Frequently Asked Questions</a>
+        <a href="#technical-issue" class="btn btn-primary fs-1">Technical Issues</a>
+      </div>
+    </div>
+
+    <div id="video-tutorial" class="container help-spacing">
+      <h1>Stuck? Watch our Tutorial</h1>
+      <div class="video-container">
+        <video autoplay muted loop playsinline>
+          <source src="assets/help-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+
+    <div id="FAQ" class="help-spacing">
+      <h1>FAQ</h1>
+      <div class="accordion container-md" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              What is eBookSmith?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              It's a tool that uses artificial intelligence to help you write stories,
+              fanfiction, screenplays, or other creative content by generating text
+              based on prompts you provide.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How does eBookSmith work?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              It uses a large language model trained on a wide range of text data to
+              understand your prompt and generate relevant, coherent story content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What stories can I generate?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              You can create any kind of story—romance, fantasy, sci-fi, horror, mystery,
+              fanfiction, and more. Just give a prompt, and eBookSmith will bring it to life.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Is it free of charge?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              Yes. Our product is free of charge. You are to use it anyway you wish.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Is the content original?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              Yes. The AI creates new, unique text each time. However, you should still
+              check for similarities if you're publishing commercially.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Can I use the stories for publishing and commercial use?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              Usually, yes—but check the platform’s terms of service.
+              Attribution may or may not be required.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Is the content safe for kids?
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              By default, the tool is designed for general audiences, but since it's based
+              on user prompts, parental guidance is recommended for younger users.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              How long are the stories?
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body center-content fs-6">
+              The stories generated are around five pages.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="technical-issue" class="help-spacing">
+      <h1>Technical Support</h1>
+      <h4 class="mb-5">Have a technical issue? Send us an email.</h4>
+
+      <form action="mailto:ebooksmith@outlook.com" method="post" enctype="text/plain">
+        <div class="mb-3">
+          <label for="tech-name" class="form-label">Name</label>
+          <input type="text" id="tech-name" name="name" class="form-control" placeholder="John Doe" />
+        </div>
+
+        <div class="mb-3">
+          <label for="tech-email" class="form-label">Email</label>
+          <input type="email" id="tech-email" name="mail" class="form-control" placeholder="you@example.com" />
+        </div>
+
+        <div class="mb-3">
+          <label for="tech-comment" class="form-label">Describe your technical issue</label>
+          <textarea id="tech-comment" name="comment" class="form-control" rows="6"
+            placeholder="Describe the issue you're experiencing..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary me-2">Send</button>
+
+      </form>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-fire@3/tsparticles.preset.fire.bundle.min.js"></script>
+  <script src="js/fireParticles.js"></script>
+  <script src="js/loadCommonElements.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Open+Sans&display=swap"
+    rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+  <main>
+    <div class="carousel-full">
+      <div id="infoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#infoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/stories.png" class="d-block w-100" alt="stories" />
+            <div class="carousel-caption">
+              <h1>Generate Any Story</h1>
+              <h5>
+                Unleash AI to craft tales in seconds—give a prompt and watch
+                the story unfold.
+              </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/forge.png" class="d-block w-100" alt="forge" />
+            <div class="carousel-caption">
+              <h1>Write Without Limits</h1>
+              <h5>
+                Whether it’s sci-fi, romance, or horror—our AI adapts to your
+                style and imagination.
+              </h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/reading.png" class="d-block w-100" alt="reading" />
+            <div class="carousel-caption">
+              <h1>Instant Story Magic</h1>
+              <h5>
+                Let your imagination flow—AI fills in the gaps so you can keep
+                creating.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container section-spacing">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="mb-4 text-md-start">Unleash Your Creativity with Captivating Stories</h1>
+          <h4 class="text-md-start">
+            Welcome to limitless storytelling possibilities! eBookSmith empowers both writers. Whether you seek
+            inspiration for your next novel or need engaging content, eBookSmith can help!
+          </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="video-container">
+            <video autoplay muted loop playsinline>
+              <source src="assets/index-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section-spacing">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="mb-4 text-md-start">From Mind to Manuscript</h1>
+          <h4 class="text-md-start">
+            Discover how your story can go from a spark of inspiration to a fully formed eBook in just minutes.
+          </h4>
+        </div>
+        <div class="col-md-6">
+          <div class="video-container">
+            <video autoplay muted loop playsinline>
+              <source src="assets/web-vid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section-spacing">
+      <h1 class="mb-5">Reviewed and Loved by Thousands</h1>
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-6 mb-3">
+          <img src="assets/testimonial1.png" alt="review1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="assets/testimonial2.png" alt="review2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="assets/testimonial3.png" alt="review3" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+
+    <section class="section text-center">
+      <div class="container">
+        <h1>Get Started with eBookSmith Today</h1>
+        <a href="forge.html" class="btn btn-primary btn-lg mt-4">Forge Your Story</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-fire@3/tsparticles.preset.fire.bundle.min.js"></script>
+  <script src="js/fireParticles.js"></script>
+  <script src="js/loadCommonElements.js"></script>
+  <script>
+    const myCarousel = document.querySelector('#infoCarousel');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 5000,
+      ride: 'carousel',
+      pause: false
+    });
+  </script>
+</body>
+
+</html>
