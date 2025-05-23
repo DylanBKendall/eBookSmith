@@ -1,2 +1,0 @@
-# eBookSmith
-AI EPUB creator
